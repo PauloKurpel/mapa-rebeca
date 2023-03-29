@@ -1,0 +1,42 @@
+.btnRow {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  background: #d1d0d0 linear-gradient(to bottom, #d1d0d0 5%, #d1d0d0 100%);
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+  color: rgba(78, 62, 62, 0.966);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  transition: all 0.1s ease;
+}
+.activebutton {
+  background: #3e32f1cb linear-gradient(to bottom, #3e32f1cb 5%, #3e32f1cb 100%);
+  color: #ffffff;
+}
+.button:hover {
+  background: #0e1357;
+  color: #ffffff;
+}
+
+.register {
+  margin: 5%;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: rgb(155, 184, 26); */
+  }

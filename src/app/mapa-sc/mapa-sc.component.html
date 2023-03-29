@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="form-group">
+      <label for="place">Pesquisar: </label>
+      <input type="text" class="pesquisar" name="place" #search autocomplete="off" autocapitalize="off" spellcheck="off">
+    </div>
+  </div>
+  <agm-map [latitude]="latitude" [zoom]="zoom" [longitude]="longitude">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" ></agm-marker>
+    <!-- <agm-marker *ngFor="let latlong of latlongs" [latitude]="latlong.latitude" [longitude]="latlong.longitude"></agm-marker> -->
+  </agm-map>
+</div>
