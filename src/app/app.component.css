@@ -1,3 +1,29 @@
+.content {
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+mat-toolbar {
+  background: -webkit-linear-gradient(right, rgb(6, 100, 92), rgb(3, 70, 64));
+  color: #fff;
+}
+
+.mat-sidenav-container {
+  height: calc(205vh - 120);
+}
+
+mat-sidenav {
+  width: 200px;
+  background: linear-gradient(to bottom, rgb(6, 100, 92) 10%, rgb(3, 70, 64) 90%);
+  color: #fff;
+}
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
 .btnRow {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-around;
@@ -5,26 +31,28 @@
 }
 
 .button {
-  width: 200px;
+  width: 199px;
   height: 100px;
-  background: #d1d0d0 linear-gradient(to bottom, #d1d0d0 5%, #d1d0d0 100%);
+  margin: 0;
+  padding: 0;
+  background: transparent;
   border: none;
   border-radius: 2px;
   display: inline-block;
   cursor: pointer;
-  color: rgba(78, 62, 62, 0.966);
+  color: #fff;
   font-family: Arial, sans-serif;
   font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  text-shadow: 0 1px 0 #ffffff;
   transition: all 0.1s ease;
 }
 .activebutton {
-  background: #3e32f1cb linear-gradient(to bottom, #3e32f1cb 5%, #3e32f1cb 100%);
+  background: linear-gradient(to bottom, rgb(3, 70, 64) 100%, rgb(6, 100, 92) 0%);
   color: #ffffff;
 }
 .button:hover {
-  background: #0e1357;
+  background: #101331;
   color: #ffffff;
 }
 

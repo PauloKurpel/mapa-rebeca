@@ -1,45 +1,18 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>
-    <div class="btnRow">
+
+<mat-toolbar>
+    <span>Command Center - MIS </span>
+    <button class="menuButton" mat-button (click)="opened=!opened"><mat-icon class="mat-18">menu</mat-icon></button>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side">
       <button class="button" routerLink="/sp" routerLinkActive="activebutton" ariaCurrentWhenActive="page">SÃO PAULO</button>
-    </div>
-    <div class="btnRow">
-      <button class="button" routerLink="/pr" routerLinkActive="activebutton" ariaCurrentWhenActive="page">PÁRANA</button>
-    </div>
-    <div class="btnRow">
+      <button class="button" routerLink="/pr" routerLinkActive="activebutton" ariaCurrentWhenActive="page">PARANÁ</button>
       <button class="button" routerLink="/rj" routerLinkActive="activebutton" ariaCurrentWhenActive="page">RIO DE JANEIRO</button>
-    </div>
-  </mat-drawer>
-  <mat-drawer-content>
-    <div class="register">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-drawer-content>
-</mat-drawer-container>
-
-<!-- <nav>
-  <div class="btnRow">
-    <button class="button" routerLink="/sp" routerLinkActive="activebutton" ariaCurrentWhenActive="page">SÃO PAULO</button>
-    <button class="button" routerLink="/pr" routerLinkActive="activebutton" ariaCurrentWhenActive="page">PÁRANA</button>
-    <button class="button" routerLink="/sc" routerLinkActive="activebutton" ariaCurrentWhenActive="page">SANTA CATARINA</button>
-  </div>
-</nav>
-
-<div class="register">
-  <router-outlet></router-outlet>
-</div> -->
-
-<!-- <mat-sidenav-container class="example-container" >
-<mat-sidenav mode="side" opened>I am Sidenav bar ..
-  <div class="btnRow">
-      <button class="button" routerLink="/sp" routerLinkActive="activebutton" ariaCurrentWhenActive="page">SÃO PAULO</button>
-      <button class="button" routerLink="/pr" routerLinkActive="activebutton" ariaCurrentWhenActive="page">PÁRANA</button>
-      <button class="button" routerLink="/sc" routerLinkActive="activebutton" ariaCurrentWhenActive="page">SANTA CATARINA</button>
-  </div>
-</mat-sidenav>
-<mat-sidenav-content>
-  <div class="register">
-    <router-outlet></router-outlet>
-  </div>
-</mat-sidenav-content>
-</mat-sidenav-container> -->
+    </mat-sidenav>
+    <!-- Body -->
+    <mat-sidenav-content>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,4 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(5, 46, 43);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgb(6, 100, 92) 10%, rgb(3, 70, 64) 90%);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.register {
+  padding: 2%;
+  border-radius: 10px;
+  margin-right: 3%;
+  margin-left: 4%;
+  transition: all 0.3s;
+  animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) normal;
+}
+
+.pesquisar {
+  width: 450px;
+  margin-bottom: 1%;
+}
+
+agm-map {
+  height: 470px !important;
+ }
+
+ .mapa {
+  border: 3px solid rgba(0, 0, 0, 0.486);
+ }
